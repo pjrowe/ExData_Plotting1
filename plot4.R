@@ -43,8 +43,8 @@ plot(xdata$Date,xdata$Sub_metering_1,type='n',xlab='',
 lines(xdata$Date,xdata$Sub_metering_1,lty='solid',lwd=1,col='black')
 lines(xdata$Date,xdata$Sub_metering_2,lty='solid',lwd=1,col='red')
 lines(xdata$Date,xdata$Sub_metering_3,lty='solid',lwd=1,col='blue')
-legend("topright",col=c('black','red','blue'),lty="solid",
-       legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
+legend('topright',inset=0.02,col=c('black','red','blue'),lty="solid",
+       legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'),box.lty=0)
 
 
 # bottom right

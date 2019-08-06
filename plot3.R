@@ -18,7 +18,6 @@ xdata<-select(xdata,c(-Time,-jDate))
 xdata$Sub_metering_1<-as.numeric(as.character(xdata$Sub_metering_1))
 xdata$Sub_metering_2<-as.numeric(as.character(xdata$Sub_metering_2))
 xdata$Sub_meteringc_3<-as.numeric(as.character(xdata$Sub_metering_3))
-
 par(mfrow=c(1,1))
 
 plot(xdata$Date,xdata$Sub_metering_1,type='n',xlab='',
@@ -26,8 +25,8 @@ plot(xdata$Date,xdata$Sub_metering_1,type='n',xlab='',
 lines(xdata$Date,xdata$Sub_metering_1,lty='solid',lwd=1,col='black')
 lines(xdata$Date,xdata$Sub_metering_2,lty='solid',lwd=1,col='red')
 lines(xdata$Date,xdata$Sub_metering_3,lty='solid',lwd=1,col='blue')
-legend("topright",col=c('black','red','blue'),lty="solid",
-       legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
+legend('topright',col=c('black','red','blue'),lty="solid",
+       legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'),box.lty=1)
 
 dev.copy(png,file='plot3.png')
 dev.off()
