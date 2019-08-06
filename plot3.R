@@ -17,7 +17,7 @@ xdata<-select(xdata,c(-Time,-jDate))
 # not sure why doing a group of columns doesn't work - turns whole columns into NA
 xdata$Sub_metering_1<-as.numeric(as.character(xdata$Sub_metering_1))
 xdata$Sub_metering_2<-as.numeric(as.character(xdata$Sub_metering_2))
-xdata$Sub_metering_3<-as.numeric(as.character(xdata$Sub_metering_3))
+xdata$Sub_meteringc_3<-as.numeric(as.character(xdata$Sub_metering_3))
 
 par(mfrow=c(1,1))
 
